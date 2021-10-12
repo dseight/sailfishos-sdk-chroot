@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - 'master'
+    tags:
+      - 'v*.*.*'
+  pull_request:
+    branches:
+      - 'master'
 
 env:
   BASE_URL: https://releases.sailfishos.org/sdk/installers/3.6.6
